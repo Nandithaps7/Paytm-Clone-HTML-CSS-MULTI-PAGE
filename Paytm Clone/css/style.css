@@ -1,0 +1,157 @@
+:root {
+  --primary: #0f6be9;
+  --light-blue: #eaf3ff;
+  --dark: #1f2937;
+  --muted: #6b7280;
+  --bg: #f4f8fc;
+  --card: #ffffff;
+  --radius: 16px;
+  --max-width: 1100px;
+  font-family: "Inter", system-ui, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--dark);
+}
+
+/* ================= HEADER ================= */
+
+.topbar {
+  background: linear-gradient(135deg, #0f6be9, #00baf2);
+  padding: 16px 0;
+}
+
+.topbar-inner {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 32px;
+}
+
+.top-icons img {
+  width: 26px;
+  margin-left: 16px;
+}
+
+/* ================= NAV ================= */
+
+.nav {
+  background: var(--card);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-inner {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 12px 20px;
+  display: flex;
+  gap: 28px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+.nav a.active {
+  color: var(--primary);
+}
+
+/* ================= LAYOUT ================= */
+
+.container {
+  max-width: var(--max-width);
+  margin: 24px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  margin-bottom: 22px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.section-header span {
+  font-size: 13px;
+  color: var(--primary);
+}
+
+/* ================= GRID ================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+}
+
+.tile {
+  background: var(--light-blue);
+  border-radius: 14px;
+  padding: 16px 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tile img {
+  width: 36px;
+  margin-bottom: 8px;
+}
+
+/* ================= WALLET ================= */
+
+.balance {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.sub {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* ================= PROFILE ================= */
+
+.profile-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+
+.profile-info h2 {
+  font-size: 18px;
+}
+
+.profile-info p {
+  color: var(--muted);
+  font-size: 14px;
+}
